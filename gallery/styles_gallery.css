@@ -1,0 +1,37 @@
+/*styles for gallery, maybe import later idk*/
+
+.set_container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+width: 95%
+margin: 0px auto;
+}
+
+div.set_container {
+margin: 5% auto;
+}
+
+.set_container figure{
+margin: 2%;
+}
+
+@media (orientation: landscape) {
+figure img {
+height: 90%;
+width: auto;
+}
+
+.big_pics {
+height: auto;
+width: 90%;
+}
+}
+
+@media (orientation: portrait) {
+figure img {
+height: auto;
+width: 80%;
+}
+}
+

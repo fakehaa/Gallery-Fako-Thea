@@ -1,0 +1,136 @@
+.nav{
+    background-color: rgba(3, 160, 160, 0.199);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+  .nav > li{
+      display: inline-block;
+      padding: 0 25px 0 25px;
+      
+  }    
+ .nav > li > a{
+     text-decoration: none;
+     color: white;
+ } 
+ 
+.nav > li > a:hover{
+    color: blueviolet;
+}
+ body{
+     background-image: url("../images_all/background.png");
+     background-size: cover;
+ }
+ #meet{
+     font-family: 'Sacramento', cursive;
+     text-align: center;
+     color:rgb(0, 0, 0);
+     text-decoration: underline, white;
+     font-size: 34pt;
+     padding-top: 20px;
+ }
+p{
+    font-size: 18pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+   
+}
+
+.header p {
+    font-weight: normal;
+}
+
+@media (orientation: landscape) {
+ .index_alt, .index_fak{
+    height: 60vh;
+    align-self: left;
+    padding-bottom: 100px;
+    display: flex;
+    z-index: 10;
+}
+.alt_inner{
+    max-width: 800px;
+    position: relative;
+    display:block;
+    top: 60%;
+    left: 60%;
+    transform : translate(-60%, -60%);
+    background: rgba(105, 81, 114, 0.137);
+    box-shadow: 0 15px 20px rgba( 0,0,0, .2);
+    padding: 50px;
+    align-self: start;
+    margin-left: 0%;   
+}
+.fak_inner{
+    max-width: 800px;
+    position: relative;
+    display:block;
+    top: 60%;
+    left: 60%;
+    transform : translate(-60%, -60%);
+    background: rgba(105, 81, 114, 0.137);
+    box-shadow: 0 15px 20px rgba( 0,0,0, .2);
+    padding: 50px;
+    align-self: start;
+    margin-left: 0%;   
+}
+.Fakeha{
+    float:left;
+    margin-left: 10px;
+}
+.Althea{
+    float: right;
+    margin-right: 10px;
+}
+#fakeha{
+    float: top;
+    float:right;
+    max-width: 30%;
+    margin-right: 25px;
+    padding-right: 15px;
+    box-shadow: rgba( 0,0,0, .2);
+}
+#althea{
+    float: top;
+    float: left;
+    max-width: 32%;
+    margin-left: 15px;
+    padding-left: 15px;
+    box-shadow: rgba( 0,0,0, .2);
+}
+}
+
+@media (orientation: portrait) {
+
+#fakeha{
+    width: 75%;
+    margin: 5%;
+    box-shadow: rgba( 0,0,0, .2);
+}
+#althea{
+    width: 75%;
+    margin: 5%;
+    box-shadow: rgba( 0,0,0, .2);
+}
+.alt_inner{
+    width: 80%;
+ height: auto;
+    background: rgba(105, 81, 114, 0.137);
+    box-shadow: 0 15px 20px rgba( 0,0,0, .2);
+    padding: 5%;
+    margin: 1% 5% 5% 5%;   
+}
+.fak_inner{
+    width: 80%;
+    background: rgba(105, 81, 114, 0.137);
+    box-shadow: 0 15px 20px rgba( 0,0,0, .2);
+    padding: 5%;
+    margin: 5%;
+}
+}
+h2{
+    font-family:  'Sacramento', cursive;
+    font-size: 32pt;
+}

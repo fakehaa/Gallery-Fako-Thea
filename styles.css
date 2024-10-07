@@ -1,0 +1,466 @@
+* {
+margin: 0px;
+padding: 0px;
+font-family: "Open Sans Condensed";
+}
+
+/*STYLE FOR ALL PAGES*/
+
+body {
+background-image: url('images_all/background.png');
+text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+background-color: rgba(3, 160, 160, 0.199);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1%;
+}
+
+.header img {
+max-width: 10%;
+background-color: white;
+border-radius: 150px;
+}
+
+.header p {
+font-style: italic;
+font-family: serif;
+font-size: 1.5vw;
+text-align: center;
+}
+
+::-webkit-scrollbar {
+width: 15px;
+}
+
+::-webkit-scrollbar-track {
+background: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+background: #D0D1FF;
+}
+
+.title h1{
+font-size: 6vw;
+text-align: left;
+color: white;
+font-family: Sacramento, fantasy;
+}
+
+.navigation_links {
+margin: 10px 0px 0px;
+font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigation_links ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.navigation_links li{
+display: inline;
+}
+
+.navigation_links a {
+text-transform: uppercase;
+font-size: 20px;
+letter-spacing: 2px;
+}
+
+.navigation_links a:link {
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+
+.navigation_links a:visited {
+color: #C0FDFF;
+font-weight: thin;
+}
+
+.navigation_links a:hover {
+text-decoration: underline;
+color: blueviolet;
+}
+
+.main_body {
+background-color: rgba(255, 255, 255, 0.9);
+margin: 3% 5% 3%;
+border-radius: 30px;
+padding: 3% 2%;
+}
+
+.main_body h1 {
+color: #000000;
+margin: 5% 0px;
+letter-spacing: 2px;
+font-family: 'Sacramento', cursive;
+}
+
+.main_body h2 {
+background-color: #DEAAFF;
+border-radius: 100px;
+color: white;
+padding: 1%;
+margin: 1% auto;
+}
+
+.main_body p, .main_body figcaption {
+font-weight: bold;
+}
+
+
+.back_button {
+color: white;
+background-color: rgba(3, 160, 160, 0.199);
+border-radius: 100px;
+padding: 1%;
+margin: 3%;
+text-decoration: none;
+}
+
+/*STYLING FOR DIFF SCREENS*/
+
+@media (orientation: landscape) {
+
+.header img {
+max-width: 10%;
+}
+
+.title {
+height: 90%;
+margin-left: 2.5%; 
+}
+
+#nav_mobile {
+display: none;
+}
+
+#nav_desktop {
+background-color: rgba(3, 160, 160, 0.199);
+padding: 0.5% 0px;
+}
+
+#nav_desktop li{
+margin: 0px 1%;
+}
+
+.main_body h1 {
+font-size: 3.5vw;
+}
+
+.main_body h2 {
+font-size: 2vw;
+}
+
+.main_body h4 {
+font-size: 1.5vw;
+}
+
+}
+
+@media (orientation: portrait) {
+
+.header img {
+max-height: 90%;
+min-width:25%;
+}
+
+.header {
+display: block;
+}
+
+.title {
+max-height: 10%;
+margin: 1.5% auto;
+}
+
+.title h1 {
+text-align: center;
+font-size: 200%;
+}
+
+.title p {
+display: none;
+}
+
+#nav_desktop {
+display: none;
+}
+
+#nav_mobile div {
+max-height: 5%;
+max-width: 100%;
+}
+
+#nav_mobile ul{
+display: flex;
+justify-content: space-around;
+max-height: 100%;
+align-items: center;
+max-width: inherit;
+background-color: #DEAAFF;
+}
+
+#nav_mobile li{
+max-height: inherit;
+max-width: inherit;
+}
+
+#nav_mobile a {
+max-height: inherit;
+max-width: inherit;
+}
+
+#nav_mobile img {
+height: auto;
+width: 60%;
+}
+
+
+.main_body h1 {
+font-size: 8vw;
+}
+
+.image_container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+}
+
+/*INDEX PAGE*/
+.nav{
+    background-color: rgba(3, 160, 160, 0.199);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    z-index: 25;
+}
+  .nav > li{
+      display: inline-block;
+      padding: 0 25px 0 25px;
+      
+  }    
+ .nav > li > a{
+     text-decoration: none;
+     color: white;
+ } 
+ 
+.nav > li > a:hover{
+    color: blueviolet;
+}
+ body{
+     background-image: url("images_all/background.png");
+     background-size: cover;
+ }
+.header p {
+ font-weight: normal;
+}
+p{
+    font-size: 16pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+   
+}
+h2{
+    font-family:  'Sacramento', cursive;
+    font-size: 32pt;
+}
+
+@media (orientation: landscape) {
+#IMGL{
+    float: top;
+    float:right;
+    width: 27%;
+    margin-right: 25px;
+    padding-right: 15px;
+    padding-top: 10px;
+    box-shadow: rgba( 0,0,0, .2);
+}
+#IMGR{
+    float: top;
+    float: left;
+    width: 27%;
+    margin-left: 25px;
+    padding-left: 25px;
+    box-shadow: rgba( 0,0,0, .2);
+} 
+.index_para{
+    height: 60vh;
+    align-self: left;
+    padding-bottom: 100px;
+    display: flex;
+    z-index: 10;
+}
+.Inner{
+    max-width: 800px;
+    position: relative;
+    display:block;
+    top: 60%;
+    left: 60%;
+    transform : translate(-60%, -60%);
+    background: rgba(105, 81, 114, 0.137);
+    box-shadow: 0 15px 20px rgba( 0,0,0, .2);
+    padding: 45px;
+    align-self: start;
+    margin: 0%;
+}
+.left{
+    float:left;
+    margin-left: 10px;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+}
+
+@media (orientation: portrait) {
+#IMGL{
+    width: 90%;
+    margin: 5%;
+    box-shadow: rgba( 0,0,0, .2);
+}
+#IMGR{
+    width: 90%;
+    margin: 5%;
+    box-shadow: rgba( 0,0,0, .2);
+} 
+
+.index_para{
+    display: flex;
+    z-index: 10;
+ margin: 0px auto;
+}
+.Inner{
+    width: 95%;
+    display:block;
+    background: rgba(105, 81, 114, 0.137);
+    box-shadow: 0 15px 20px rgba( 0,0,0, .2);
+    padding: 45px;
+    margin: 0%;
+}
+
+.left{
+    margin: 0px;
+}
+.right{
+    margin: 0px;
+}
+}
+
+.body2 {
+margin: 3% 5%;
+}
+
+
+
+/*COMMISSIONS PAGE*/
+
+h4 {
+color: #DEAAFF;
+margin: 1% auto;
+font-size: 4vw;
+}
+
+.image_container {
+display: flex;
+justify-content: space-around;
+}
+
+.full_details {
+width: 90%;
+margin: 0px 10%;
+}
+
+.full_details img {
+width: 90%;
+height: auto;
+}
+
+.full_details table {
+margin: 2% auto;
+max-width: 90%;
+max-height: auto;
+background-color: rgba(243, 196, 251, 0.7);
+border-radius: 20px;
+padding: 2%;
+}
+
+.full_details tr, .full_details th, .full_details td{
+margin: 2%;
+padding: 0.5%;
+font-weight: bold;
+}
+
+.note {
+margin-bottom: 5%;
+margin-top: 3%;
+}
+
+.note h2 {
+background-color: #FFCBF2;
+}
+
+.note ul {
+margin: 0px 5%;
+}
+
+.note li {
+text-align: left;
+font-weight: bold;
+}
+
+fieldset {
+margin: 3%;
+padding: 1%;
+max-width: 90%;
+}
+
+form table {
+margin: 0px auto;
+max-width: 90%;
+overflow: auto;
+}
+
+form td, form th {
+
+margin: 1% 3%;
+padding: 1% 3%;
+overflow: auto;
+}
+
+
+th > i {
+font-size: 10px;
+}
+
+textarea {
+width: 90%;
+}
+
+input {
+width: 90%;
+}
+
+#submit {
+background-color: #DEAAFF;
+color: white;
+padding: 1%;
+font-weight: bold;
+}
+
